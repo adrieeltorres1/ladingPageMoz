@@ -1,21 +1,28 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePhoneFlip } from '@fortawesome/free-solid-svg-icons';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css"
 
 const Ladingpage = () => {
     return (
         <>
             <div className="relative w-full h-screen max-h-96">
                 <img src='/imagemUp.jpg' alt="Imagem" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+                <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center flex-col">
                     <h1 className="text-xl text-white p-4">Seja bem-vindo a FB Farms Busness</h1>
+                    <div className="absolute bottom-8">
+                        <img className="w-12 h-12 animate-pulse animate__animated animate__fast" src="/arrow-down.png" alt=""/>
+                    </div>
                 </div>
             </div>
             <section className="m-5">
                 <h2 className="text-2xl"><strong>Quem somos</strong></h2>
                 <p className="text-justify text-lg md:text-lg lg:text-xl">Na FB Farms Busness, nossa missão é fornecer frangos vivos de qualidade excepcional, priorizando sempre o bem-estar dos nossos clientes e a satisfação de suas necessidades. Com um compromisso inabalável com a excelência, cultivamos nossos frangos em ambientes que respeitam os mais altos padrões de cuidado e nutrição, garantindo produtos saudáveis e de confiança.</p>
                 <div>
-                    <img className="w-[350px] rounded-lg mt-4 shadow-md" src='/chickenAbout.jpg' alt="" />
+                    <ScrollAnimation animateIn="animate__fadeInLeft">
+                        <img className="w-[350px] rounded-lg mt-4 shadow-md" src='/chickenAbout.jpg' alt="" />
+                    </ScrollAnimation>
                 </div>
             </section>
             <img className="w-[100px] m-auto" src='/fiveStars.png' alt="" />
@@ -41,7 +48,7 @@ const Ladingpage = () => {
             </section>
 
             <section className="m-5">
-                <h2 className="flex justify-center text-xl"><strong>Não Perca Tempo, Garanta o Seu!</strong></h2>
+                <h2 className="flex justify-center text-lg"><strong>Não Perca Tempo, Garanta o Seu!</strong></h2>
             </section>
 
             <footer className="bg-gray-700 text-white p-4 mt-10">
