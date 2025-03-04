@@ -8,7 +8,7 @@ const Ladingpage = () => {
             <div className="relative w-full h-screen max-h-96">
                 <img src='../src/assets/imagemUp.jpg' alt="Imagem" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-                    <h1 className="text-2xl  text-white p-4">Seja bem-vindo a FB Farms Busness</h1>
+                    <h1 className="text-xl text-white p-4">Seja bem-vindo a FB Farms Busness</h1>
                 </div>
             </div>
             <section className="m-5">
@@ -44,17 +44,14 @@ const Ladingpage = () => {
             </section>
 
             <section className="m-5">
-                <h2 className="text-2xl"><strong>Não Perca Tempo, Garanta o Seu!</strong></h2>
+                <h2 className="flex justify-center text-xl"><strong>Não Perca Tempo, Garanta o Seu!</strong></h2>
             </section>
 
             <footer className="bg-gray-700 text-white p-4 mt-10">
-                <div className="flex flex-col md:flex-row justify-between items-center">
-                    <div className="mb-4 md:mb-0">
-                        <h2 className="text-lg font-bold">FB Farms Businesses</h2>
-                    </div>
-                    <div className="text-center md:text-right">
+                <div className="flex flex-col items-center">
+                    <div className="text-center">
                         <p>&copy; 2025 FB Farms Businesses. Todos os direitos reservados.</p>
-                        <p><a href="">Desenvolvido com ❤️ por Adriel Torres</a></p>
+                        <p><a href="">Desenvolvido com ❤️ por <u>Adriel Torres</u></a></p>
                     </div>
                 </div>
             </footer>
