@@ -1,0 +1,92 @@
+/* desktop.css */
+
+/* Esconder o texto maior em dispositivos móveis */
+.desktop-text {
+    display: none;
+}
+
+/* Ajustes para telas a partir de 768px (tablets e desktops) */
+@media screen and (min-width: 768px) {
+    .mobile-text {
+        display: none;
+    }
+
+    .desktop-text {
+        display: block;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about > div {
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem; /* Reduzindo o espaçamento acima do texto e imagem */
+    }
+
+    #about p {
+        width: 50%;
+        margin-right: 1rem; /* Reduzindo o espaçamento à direita do texto */
+        margin-bottom: 80px;
+    }
+
+    #chickenAbout {
+        width: 750px; /* Definindo o tamanho da imagem para 750px */
+        margin-left: 100px;
+
+    }
+
+    #values {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    #valueRounded {
+        max-width: 700px;
+        margin-left: 2rem;
+    }
+
+    #hero {
+        height: 100vh;
+    }
+
+    #heroTitle{
+        font-size: 40px;
+    }
+
+    #gallery {
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+
+    #firstImage,
+    #secondImage,
+    #thirdImage,
+    #fourthImage {
+        width: 200px;
+        height: 200px;
+    }
+
+    #contactButton {
+        margin-top: 1rem;
+    }
+}
+
+/* Ajustes adicionais para telas a partir de 1024px (desktops maiores) */
+@media screen and (min-width: 1024px) {
+    #hero {
+        height: 100vh;
+    }
+
+    #values {
+        flex-direction: row;
+    }
+
+    #valueRounded {
+        max-width: 700px;
+    }
+}
